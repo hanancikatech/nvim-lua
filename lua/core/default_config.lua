@@ -2,7 +2,8 @@
 -- use custom/chadrc.lua instead
 
 local M = {}
-M.options, M.ui, M.mappings, M.plugins = {}, {}, {}, {}
+M.options, M.ui, M.mappings, M.plugins , M.window = {}, {}, {}, {} , {}
+
 
 -- non plugin normal, available without any plugins
 M.options = {
