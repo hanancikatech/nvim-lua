@@ -12,15 +12,15 @@ M.options = {
    cmdheight = 1,
    ruler = true,
    hidden = true,
-   ignorecase = true,
-   smartcase = true,
+   ignorecase = false,
+   smartcase = false,
    mapleader = " ",
    mouse = "a",
    number = true,
    -- relative numbers in normal mode tool at the bottom of options.lua
    numberwidth = 2,
    relativenumber = true,
-   expandtab = false,
+   expandtab = true,
    shiftwidth = 2,
    smartindent = false,
    tabstop = 4, -- Number of spaces that a <Tab> in the file counts for
@@ -43,7 +43,7 @@ M.options = {
 
 -- ui configs
 M.ui = {
-   italic_comments = false,
+   italic_comments = true,
    -- theme to be used, check available themes with `<leader> + t + h`
    theme = "onedark",
    -- toggle between two themes, see theme_toggler mappings
@@ -53,7 +53,7 @@ M.ui = {
    },
    -- Enable this only if your terminal has the colorscheme set which nvchad uses
    -- For Ex : if you have onedark set in nvchad, set onedark's bg color on your terminal
-   transparency = false,
+   transparency = true,
 }
 
 -- these are plugin related options
@@ -71,7 +71,7 @@ M.plugins = {
       lspsignature = true, -- lsp enhancements
       telescope_media = false, -- media previews within telescope finders
       vim_matchup = true, -- % operator enhancements
-      cmp = true,
+      cmp = false,
       nvimtree = true,
       autopairs = true,
    },
@@ -184,8 +184,8 @@ M.mappings.plugins = {
       buffers = "<leader>fb",
       find_files = "<leader>ff",
       find_hiddenfiles = "<leader>fa",
-      git_commits = "<leader>cm",
-      git_status = "<leader>gt",
+      git_commits = "<leader>gc",
+      git_status = "<leader>gs",
       help_tags = "<leader>fh",
       live_grep = "<leader>fw",
       oldfiles = "<leader>fo",

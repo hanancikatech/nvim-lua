@@ -48,21 +48,14 @@ require "custom.go"
 	  "alvan/vim-closetag"
 	}
 
+	use {
+	  "sheerun/vim-polyglot"
+	}
+
  end)
 
 -- let g:winresizer_start_key = '<C-w>r'
 vim.g.winresizer_start_key = '<C-w>r'
-vim.g.closetag_filenames = '*.html,*.xhtml,*.phtml'
-vim.g.closetag_xhtml_filenames = '*.xhtml,*.jsx'
-vim.g.closetag_filetypes = 'html,xhtml,phtml'
-vim.g.closetag_xhtml_filetypes = 'xhtml,jsx'
-vim.g.closetag_emptyTags_caseSensitive = 1
-vim.g.closetag_shortcut = '>'
-vim.g.closetag_close_shortcut = '<leader>>'
-
-
--- alternatively, put this in a sub-folder like "lua/custom/plugins/mkdir"
--- then source it with
 
 -- require "custom.plugins.mkdir"
  hooks.add("setup_mappings", function(map)
